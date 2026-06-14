@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>勉強ゲーム一覧</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', 'Hiragino Sans', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 8px;
+      color: #7dd3fc;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #94a3b8;
+      margin-bottom: 40px;
+      font-size: 0.95rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 24px 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: #7dd3fc;
+      box-shadow: 0 8px 24px rgba(125, 211, 252, 0.12);
+    }
+
+    .card-icon { font-size: 2rem; }
+    .card-title { font-size: 1.1rem; font-weight: 600; color: #f1f5f9; }
+    .card-desc  { font-size: 0.85rem; color: #94a3b8; line-height: 1.5; }
+
+    .empty {
+      text-align: center;
+      color: #475569;
+      margin-top: 60px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 勉強ゲーム一覧</h1>
+  <p class="subtitle">ゲームを選んで学習しよう</p>
+
+  <div class="grid" id="game-grid">
+    <!-- ゲームカードはここに追加される -->
+  </div>
+
+  <p class="empty" id="empty-msg">まだゲームがありません。</p>
+
+  <script>
+    const games = [
+      {
+        path: "./math-quiz/index.html",
+        icon: "🧮",
+        title: "計算ゲーム",
+        desc: "足し算・引き算・掛け算・割り算を練習。正解を重ねると桁数アップ！"
+      },
+    ];
+
+    const grid = document.getElementById('game-grid');
+    const emptyMsg = document.getElementById('empty-msg');
+
+    if (games.length > 0) {
+      emptyMsg.style.display = 'none';
+      games.forEach(g => {
+        const a = document.createElement('a');
+        a.className = 'card';
+        a.href = g.path;
+        a.innerHTML = `
+          <span class="card-icon">${g.icon}</span>
+          <span class="card-title">${g.title}</span>
+          <span class="card-desc">${g.desc}</span>
+        `;
+        grid.appendChild(a);
+      });
+    }
+  </script>
+</body>
+</html>
