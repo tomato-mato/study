@@ -1,0 +1,63 @@
+[
+  {
+    "id": "fe001",
+    "question": "CPU（中央処理装置）の主な役割として正しいものはどれか？",
+    "choices": [
+      "データを長期保存する",
+      "演算処理と制御を行う",
+      "映像を画面に表示する",
+      "ネットワークに接続する"
+    ],
+    "answer": 1,
+    "explanation": "CPUは「演算装置」と「制御装置」から構成され、プログラムの命令を解釈・実行する中心的な役割を担います。",
+    "link": "https://www.fe-siken.com/s/fe/FE_R04_a_pm1_q06.html"
+  },
+  {
+    "id": "fe002",
+    "question": "2進数の「1010」を10進数に変換すると？",
+    "choices": ["8", "10", "12", "14"],
+    "answer": 1,
+    "explanation": "1×2³ + 0×2² + 1×2¹ + 0×2⁰ = 8 + 0 + 2 + 0 = 10 です。各桁は右から2の0乗、1乗、2乗…を掛けます。",
+    "link": "https://www.fe-siken.com/kakomon/04_haru/q1.html"
+  },
+  {
+    "id": "fe003",
+    "question": "OSの役割として適切でないものはどれか？",
+    "choices": [
+      "ハードウェアの管理",
+      "アプリケーションへの資源割り当て",
+      "ビジネスロジックの実装",
+      "ファイルの管理"
+    ],
+    "answer": 2,
+    "explanation": "OSはハードウェア管理・資源割り当て・ファイル管理などを行います。ビジネスロジックの実装はアプリケーションの役割であり、OSの担当ではありません。"
+  },
+  {
+    "id": "fe004",
+    "question": "HTMLの正式名称はどれか？",
+    "choices": [
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "HyperTool Multi Language",
+      "HyperText Modern Language"
+    ],
+    "answer": 0,
+    "explanation": "HTMLはHyperText Markup Languageの略です。Webページの構造を記述するためのマークアップ言語です。",
+    "link": "https://developer.mozilla.org/ja/docs/Web/HTML"
+  },
+  {
+    "id": "fe005",
+    "question": "リレーショナルデータベースでデータを検索するSQL文はどれか？",
+    "choices": ["INSERT", "UPDATE", "SELECT", "DELETE"],
+    "answer": 2,
+    "explanation": "SELECTはデータを検索・取得するSQL文です。INSERT（追加）・UPDATE（更新）・DELETE（削除）と合わせてDML（データ操作言語）と呼ばれます。"
+  },
+  {
+    "id": "fe006",
+    "question": "IPアドレスのバージョンで、現在インターネットで最も広く使われているのはどれか？",
+    "choices": ["IPv2", "IPv4", "IPv6", "IPv8"],
+    "answer": 1,
+    "explanation": "現在のインターネットはIPv4（32ビットアドレス）が主流です。アドレス枯渇問題からIPv6（128ビット）への移行も進んでいますが、IPv4が最も普及しています。",
+    "link": "https://www.fe-siken.com/kakomon/04_haru/q31.html"
+  }
+]

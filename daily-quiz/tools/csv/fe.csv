@@ -1,0 +1,7 @@
+id,question,choice1,choice2,choice3,choice4,answer,explanation,link
+fe001,CPU（中央処理装置）の主な役割として正しいものはどれか？,データを長期保存する,演算処理と制御を行う,映像を画面に表示する,ネットワークに接続する,2,CPUは「演算装置」と「制御装置」から構成され、プログラムの命令を解釈・実行する中心的な役割を担います。,https://www.fe-siken.com/s/fe/FE_R04_a_pm1_q06.html
+fe002,2進数の「1010」を10進数に変換すると？,8,10,12,14,2,1×2³ + 0×2² + 1×2¹ + 0×2⁰ = 8 + 0 + 2 + 0 = 10 です。各桁は右から2の0乗、1乗、2乗…を掛けます。,https://www.fe-siken.com/kakomon/04_haru/q1.html
+fe003,OSの役割として適切でないものはどれか？,ハードウェアの管理,アプリケーションへの資源割り当て,ビジネスロジックの実装,ファイルの管理,3,OSはハードウェア管理・資源割り当て・ファイル管理などを行います。ビジネスロジックの実装はアプリケーションの役割であり、OSの担当ではありません。,
+fe004,HTMLの正式名称はどれか？,HyperText Markup Language,HighText Machine Language,HyperTool Multi Language,HyperText Modern Language,1,HTMLはHyperText Markup Languageの略です。Webページの構造を記述するためのマークアップ言語です。,https://developer.mozilla.org/ja/docs/Web/HTML
+fe005,リレーショナルデータベースでデータを検索するSQL文はどれか？,INSERT,UPDATE,SELECT,DELETE,3,SELECTはデータを検索・取得するSQL文です。INSERT（追加）・UPDATE（更新）・DELETE（削除）と合わせてDML（データ操作言語）と呼ばれます。,
+fe006,IPアドレスのバージョンで現在インターネットで最も広く使われているのはどれか？,IPv2,IPv4,IPv6,IPv8,2,現在のインターネットはIPv4（32ビットアドレス）が主流です。アドレス枯渇問題からIPv6（128ビット）への移行も進んでいますが、IPv4が最も普及しています。,https://www.fe-siken.com/kakomon/04_haru/q31.html

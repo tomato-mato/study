@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>読み込み中...</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header>
+    <div class="app-title" id="app-title">読み込み中...</div>
+    <nav class="nav">
+      <button class="nav-btn active" data-screen="today" onclick="showToday()">今日</button>
+      <button class="nav-btn" data-screen="past"  onclick="showPast()">過去問</button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="screen-today" class="screen active">
+      <div class="today-date" id="today-date"></div>
+      <div id="today-content"></div>
+    </div>
+
+    <div id="screen-quiz" class="screen">
+      <div class="quiz-meta">
+        <span class="quiz-num" id="quiz-num"></span>
+        <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+      </div>
+      <div class="question-text" id="question-text"></div>
+      <div class="choices" id="choices"></div>
+      <div class="explanation" id="explanation" style="display:none"></div>
+      <button class="btn-next" id="btn-next" onclick="nextQuestion()" style="display:none"></button>
+    </div>
+
+    <div id="screen-result" class="screen">
+      <div id="result-content"></div>
+    </div>
+
+    <div id="screen-past" class="screen">
+      <div id="past-content"></div>
+    </div>
+  </main>
+
+  <script src="../assets/app.js"></script>
+  <script>initApp('fe');</script>
+</body>
+</html>

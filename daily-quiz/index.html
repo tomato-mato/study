@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>日替わり学習</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Hiragino Sans', 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    h1  { text-align: center; font-size: 1.8rem; color: #7dd3fc; margin-bottom: 6px; }
+    .sub { text-align: center; color: #94a3b8; font-size: 0.88rem; margin-bottom: 36px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 24px 18px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: all 0.15s;
+    }
+    .card:hover { border-color: #7dd3fc; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(125,211,252,0.1); }
+    .card-icon  { font-size: 2rem; }
+    .card-title { font-size: 1rem; font-weight: 700; }
+    .card-desc  { font-size: 0.8rem; color: #64748b; line-height: 1.5; }
+    .back { display: block; text-align: center; margin-top: 32px; color: #475569; text-decoration: none; font-size: 0.82rem; }
+    .back:hover { color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <h1>📖 日替わり学習</h1>
+  <p class="sub">アプリを選んで今日の問題を解こう</p>
+  <div class="grid">
+    <a class="card" href="./kids/index.html">
+      <span class="card-icon">🧒</span>
+      <span class="card-title">きょうのもんだい</span>
+      <span class="card-desc">子ども向け。算数・理科・言葉の問題を毎日5問</span>
+    </a>
+    <a class="card" href="./kyoto/index.html">
+      <span class="card-icon">⛩️</span>
+      <span class="card-title">京都検定</span>
+      <span class="card-desc">京都の歴史・文化・観光を毎日5問で学ぶ</span>
+    </a>
+    <a class="card" href="./fe/index.html">
+      <span class="card-icon">💻</span>
+      <span class="card-title">基本情報技術者試験</span>
+      <span class="card-desc">IT基礎知識を毎日3問。解説リンク付き</span>
+    </a>
+  </div>
+  <a class="back" href="../index.html">← ゲーム一覧に戻る</a>
+</body>
+</html>
